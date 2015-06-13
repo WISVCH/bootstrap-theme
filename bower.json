@@ -1,0 +1,21 @@
+{
+  "name": "bootstrap-theme-wisvch",
+  "version": "0.0.1",
+  "private": true,
+  "author": "W.I.S.V. 'Christiaan Huygens'",
+  "main": "dist/bootstrap.css",
+  "themestrap": {
+    "name": "Bootstrap Theme for WISVCH",
+    "repo": "https://github.com/WISVCH/bootstrap-theme"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.4"
+  }
+}
