@@ -6,7 +6,8 @@
   "main": "dist/bootstrap.css",
   "themestrap": {
     "name": "Bootstrap Theme for WISVCH",
-    "repo": "WISVCH/bootstrap-theme"
+    "repo": "WISVCH/bootstrap-theme",
+    "url": "https://github.com/WISVCH/bootstrap-theme"
   },
   "ignore": [
     "**/.*",
