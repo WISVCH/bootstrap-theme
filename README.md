@@ -6,7 +6,7 @@ possible.
 
 ## Usage
 
-See http://wisvch.github.io/bootstrap-theme/
+See https://wisvch.github.io/bootstrap-theme/
 
 ## Development
 

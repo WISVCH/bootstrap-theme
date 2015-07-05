@@ -51,7 +51,8 @@ module.exports = (grunt) ->
       bootstrap:
         files: [
           { expand: true, cwd: '<%= bowerDirectory %>/bootstrap/less', src: ['bootstrap.less'], dest: 'tmp/' },
-          { expand: true, cwd: '<%= bowerDirectory %>/bootstrap/fonts', src: ['*'], dest: 'dist/fonts' }
+          { expand: true, cwd: '<%= bowerDirectory %>/bootstrap/dist/fonts', src: ['*'], dest: 'dist/fonts' },
+          { expand: true, cwd: '<%= bowerDirectory %>/bootstrap/dist/js', src: ['*'], dest: 'dist/js' }
         ]
     clean: ['tmp']
 
