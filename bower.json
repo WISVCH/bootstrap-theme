@@ -1,6 +1,6 @@
 {
   "name": "wisvch-bootstrap-theme",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "private": false,
   "author": "W.I.S.V. 'Christiaan Huygens'",
   "main": "dist/bootstrap.css",

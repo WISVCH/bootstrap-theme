@@ -1,5 +1,5 @@
 /*!
- * WISVCH Bootstrap Theme v0.0.2
+ * WISVCH Bootstrap Theme v0.0.3
  * https://github.com/WISVCH/bootstrap-theme
  *
  * Copyright 2015 W.I.S.V. 'Christiaan Huygens'
@@ -8058,4 +8058,42 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+
+.form-condensed legend {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.form-condensed .form-group {
+  margin-bottom: 5px;
+}
+
+.form-condensed .form-control {
+  height: 25px;
+  padding: 4px 7px;
+  font-size: 12px;
+}
+
+.form-condensed textarea.form-control {
+  height: auto!important;
+}
+
+.form-condensed .control-label {
+  padding-top: 4px;
+  font-size: 12px;
+}
+
+.form-condensed .checkbox {
+  min-height: initial;
+  padding-top: 0;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.form-condensed .form-control-static {
+  min-height: initial;
+  padding-top: 4px;
+  padding-bottom: 0;
+  font-size: 12px;
 }
