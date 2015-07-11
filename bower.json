@@ -3,6 +3,7 @@
   "version": "0.0.3",
   "private": false,
   "author": "W.I.S.V. 'Christiaan Huygens'",
+  "license": "Apache-2.0",
   "main": "dist/bootstrap.css",
   "themestrap": {
     "name": "Bootstrap Theme for WISVCH",
