@@ -1,13 +1,13 @@
 module.exports = (grunt) ->
   grunt.initConfig
     bowerDirectory: require('bower').config.directory
-    less:
+    sass:
       compile:
         options:
           compress: false
-          paths: ['less', 'tmp', '<%= bowerDirectory %>/bootstrap/less']
+          loadPath: ['scss', 'tmp', '<%= bowerDirectory %>/bootstrap/scss']
         files:
-          'dist/css/bootstrap.css': ['less/theme.less']
+          'dist/css/bootstrap.css': ['scss/theme.scss']
     recess:
       dist:
         options:
@@ -15,9 +15,9 @@ module.exports = (grunt) ->
         files:
           'dist/css/bootstrap.css': ['dist/css/bootstrap.css']
     watch:
-      less:
-        files: ['less/*.less']
-        tasks: ['copy', 'less:compile', 'clean']
+      sass:
+        files: ['scss/*.scss']
+        tasks: ['copy', 'sass', 'clean']
         options:
           livereload: true
       cssmin:
@@ -50,13 +50,13 @@ module.exports = (grunt) ->
     copy:
       bootstrap:
         files: [
-          { expand: true, cwd: '<%= bowerDirectory %>/bootstrap/less', src: ['bootstrap.less'], dest: 'tmp/' },
+          { expand: true, cwd: '<%= bowerDirectory %>/bootstrap/scss', src: ['bootstrap.scss'], dest: 'tmp/' },
           { expand: true, cwd: '<%= bowerDirectory %>/bootstrap/dist/fonts', src: ['*'], dest: 'dist/fonts' },
           { expand: true, cwd: '<%= bowerDirectory %>/bootstrap/dist/js', src: ['*'], dest: 'dist/js' }
         ]
     clean: ['tmp']
 
-  grunt.loadNpmTasks('grunt-contrib-less')
+  grunt.loadNpmTasks('grunt-contrib-sass')
   grunt.loadNpmTasks('grunt-recess')
   grunt.loadNpmTasks('grunt-contrib-watch')
   grunt.loadNpmTasks('grunt-contrib-cssmin')
@@ -66,5 +66,5 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks('grunt-contrib-connect')
   grunt.loadNpmTasks('assemble')
 
-  grunt.registerTask('default', ['copy', 'less', 'recess', 'cssmin', 'assemble', 'clean'])
+  grunt.registerTask('default', ['copy', 'sass', 'recess', 'cssmin', 'assemble', 'clean'])
   grunt.registerTask('serve', ['connect', 'watch'])
