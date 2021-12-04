@@ -73,7 +73,7 @@ $info:          $turquoise !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         #E3EDF2 !default;
-$dark:          $black !default;
+$dark:          $indigo !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
@@ -363,12 +363,12 @@ $table-active-bg:             $table-hover-bg !default;
 $table-border-width:          $border-width !default;
 $table-border-color:          $border-color !default;
 
-$table-head-bg:               $gray-200 !default;
-$table-head-color:            $gray-700 !default;
+$table-head-bg:               theme-color("primary") !default;
+$table-head-color:            $white !default;
 $table-th-font-weight:        null !default;
 
 $table-dark-color:            $white !default;
-$table-dark-bg:               $gray-800 !default;
+$table-dark-bg:               $primary !default;
 $table-dark-accent-bg:        rgba($white, .05) !default;
 $table-dark-hover-color:      $table-dark-color !default;
 $table-dark-hover-bg:         rgba($white, .075) !default;
