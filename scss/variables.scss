@@ -61,7 +61,7 @@ $gray-600: #8a8a8a !default;
 $gray-700: #8a8a8a !default;
 $gray-800: #8a8a8a !default;
 $gray-900: #262626 !default;
-$black:  #262626 !default;
+$black:  #000000 !default;
 
 $grays: (
   100: $gray-100,
@@ -75,15 +75,16 @@ $grays: (
   900: $gray-900
 ) !default;
 
-$blue:    #40556a !default;
-$indigo:  #6610f2 !default;
+$blue:    #90B6CB !default;
+$indigo:  #1E274A !default;
 $purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
+$pink:    #E8308A !default;
 $red:     #ef4545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffae00 !default;
-$green:   #8ac926 !default;
+$orange:  #EE7203 !default;
+$yellow:  #FBBB21 !default;
+$green:   #97DB4F !default;
 $teal:    #20c997 !default;
+$turquoise: #2AA1A9 !default;
 $cyan:    #058cce !default;
 
 $colors: (
@@ -96,6 +97,7 @@ $colors: (
   "yellow": $yellow,
   "green": $green,
   "teal": $teal,
+  'turquoise': $turquoise,
   "cyan": $cyan,
   "white": $white,
   "gray": $gray-600,
@@ -103,14 +105,14 @@ $colors: (
 ) !default;
 
 $theme-colors: (
-  "primary": $blue,
-  "secondary": $red,
+  "primary": $indigo,
+  "secondary": $pink,
   "success": $green,
-  "info": $cyan,
+  "info": $turquoise,
   "warning": $yellow,
   "danger": $red,
-  "light": $gray-100,
-  "dark": $gray-900
+  "light": #E3EDF2,
+  "dark": $black
 ) !default;
 
 // Set a specific jump point for requesting color jumps
@@ -271,7 +273,7 @@ $embed-responsive-aspect-ratios: join(
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: Lato, "Helvetica Neue", sans-serif !default;
+$font-family-sans-serif: nimbus-sans, "News Gothic", Lato, "Helvetica Neue", sans-serif !default;
 $font-family-monospace:  Consolas, 'Liberation Mono', Courier, monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
 
