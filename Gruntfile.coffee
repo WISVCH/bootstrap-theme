@@ -64,7 +64,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks('grunt-text-replace')
   grunt.loadNpmTasks('grunt-contrib-clean')
   grunt.loadNpmTasks('grunt-contrib-connect')
-  grunt.loadNpmTasks('assemble')
+  grunt.loadNpmTasks('grunt-assemble')
 
   grunt.registerTask('default', ['copy', 'sass', 'recess', 'cssmin', 'assemble', 'clean'])
   grunt.registerTask('serve', ['connect', 'watch'])
