@@ -1,6 +1,6 @@
 {
   "name": "wisvch-bootstrap-theme",
-  "version": "0.0.3",
+  "version": "4.6.1-3",
   "private": false,
   "author": "W.I.S.V. 'Christiaan Huygens'",
   "license": "Apache-2.0",
@@ -18,6 +18,6 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "3.3.5"
+    "bootstrap": "4.6.1"
   }
 }

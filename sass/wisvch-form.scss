@@ -1,0 +1,18 @@
+label {
+  color: theme-color("primary");
+}
+
+.form-control { 
+    &:disabled,
+    &.disabled,
+    &:read-only,
+    &.readonly {
+        border-style: dashed;
+        box-shadow: none;
+        border-width: 2px;
+    }
+}
+
+.input-group-addon {
+    border: 2px solid $gray-100;
+}
